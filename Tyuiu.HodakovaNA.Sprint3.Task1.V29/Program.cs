@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.HodakovaNA.Sprint3.Task0.V9.Lib;
+using Tyuiu.HodakovaNA.Sprint3.Task1.V29.Lib;
 
-namespace Tyuiu.HodakovaNA.Sprint3.Task0.V9
+namespace Tyuiu.HodakovaNA.Sprint3.Task1.V29
 {
     class Program
     {
@@ -18,26 +18,26 @@ namespace Tyuiu.HodakovaNA.Sprint3.Task0.V9
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* Спринт #3                                                                *");
             Console.WriteLine("* Тема: Алгоритмы циклической структуры                                    *");
-            Console.WriteLine("* Задание #0                                                               *");
-            Console.WriteLine("* Вариант #9                                                               *");
+            Console.WriteLine("* Задание #1                                                               *");
+            Console.WriteLine("* Вариант #29                                                              *");
             Console.WriteLine("* Выполнила: Ходакова Надежда Антоновна | АСОиУБ-23-1                      *");
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                 *");
-            Console.WriteLine("* Написать программу используя цикл for, которая вычисляет сумму ряда по   *");
-            Console.WriteLine("* формуле, при x = 0,5                                                     *");
+            Console.WriteLine("* Написать программу используя цикл for, которая вычисляет произведение    *");
+            Console.WriteLine("* ряда по формуле, при x = 0,25                                            *");
             Console.WriteLine("*                                                                          *");
-            Console.WriteLine("*     15                                                                   *");
-            Console.WriteLine("* S = Σ (1/(3+x^i))^i                                                      *");
+            Console.WriteLine("*     11                                                                   *");
+            Console.WriteLine("* S = П ((x^2)*i)+2                                                        *");
             Console.WriteLine("*    i=1                                                                   *");
             Console.WriteLine("*                                                                          *");
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         *");
             Console.WriteLine("****************************************************************************");
 
-            double value = 0.5;
+            double value = 0.25;
             int startValue = 1;
-            int stopValue = 15;
-            double SumSeries = ds.GetSumSeries(value, startValue, stopValue);
+            int stopValue = 11;
+            double MultiplySeries = ds.GetMultiplySeries(value, startValue, stopValue);
             Console.WriteLine("Старт шага равен " + startValue);
             Console.WriteLine("Конец шага равен " + stopValue);
 
@@ -45,7 +45,7 @@ namespace Tyuiu.HodakovaNA.Sprint3.Task0.V9
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               *");
             Console.WriteLine("****************************************************************************");
 
-            Console.WriteLine("Сумма ряда с округлением до 3 цифр после запятой равно " + SumSeries);
+            Console.WriteLine("Произведение ряда с округлением до 3 цифр после запятой равно " + MultiplySeries);
 
             Console.ReadKey();
         }
