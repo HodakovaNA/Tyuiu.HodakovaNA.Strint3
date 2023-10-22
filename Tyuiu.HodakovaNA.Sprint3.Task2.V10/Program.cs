@@ -37,7 +37,8 @@ namespace Tyuiu.HodakovaNA.Sprint3.Task2.V10
             int value = 1;
             int startValue = 1;
             int stopValue = 13;
-            double MultiplySeries = ds.GetMultiplySeries(value, startValue, stopValue);
+
+            Console.WriteLine("Переменная X = " + value);
             Console.WriteLine("Старт шага равен " + startValue);
             Console.WriteLine("Конец шага равен " + stopValue);
 
@@ -45,8 +46,9 @@ namespace Tyuiu.HodakovaNA.Sprint3.Task2.V10
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               *");
             Console.WriteLine("****************************************************************************");
 
-            Console.WriteLine("Произведение ряда с округлением до 3 цифр после запятой равно " + MultiplySeries);
+            Console.WriteLine("Произведение ряда с округлением до 3 цифр после запятой равно " + ds.GetMultiplySeries(value, startValue, stopValue));
 
             Console.ReadKey();
         }
+    }
 }

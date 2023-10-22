@@ -15,11 +15,9 @@ namespace Tyuiu.HodakovaNA.Sprint3.Task2.V10.Lib
             double MultiplySeries = 1;
             do
             {
-                MultiplySeries *= (Math.Pow(value, startValue) + 1 / (startValue + 1));
+                MultiplySeries *= (Math.Pow(value, startValue) + (1 / (startValue + 1)));
                 startValue++; 
-            }
-            while (startValue <= stopValue);
-
+            } while (startValue <= stopValue);
             return Math.Round(MultiplySeries, 3);
         }
     }
