@@ -12,16 +12,16 @@ namespace Tyuiu.HodakovaNA.Strint3.Task3.V14.Lib
     {
         public string ReplaceCharInString(string value, char replaceable, char replacement)
         {
-            string value = "dgt ghedd bed";
+            string res = "";
 
-            foreach (char replaceable in value)
+            foreach (char t in value)
             {
-                if (replaceable == 'd')
+                if (t == replaceable)
                 {
-                    value = value.Replace(replaceable, '’');
+                    res = value.Replace(replaceable, replacement);
                 }
             }
-            return value;
+            return res;
         }
     }
 }

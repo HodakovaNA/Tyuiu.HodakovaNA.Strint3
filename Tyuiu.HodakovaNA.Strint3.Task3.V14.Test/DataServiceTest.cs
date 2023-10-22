@@ -14,7 +14,6 @@ namespace Tyuiu.HodakovaNA.Strint3.Task3.V14.Test
             DataService ds = new DataService();
 
             string value = "dgt ghedd bed";
-
             char replaceable = 'd';
             char replacement = '’';
 

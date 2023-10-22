@@ -19,7 +19,7 @@ namespace Tyuiu.HodakovaNA.Strint3.Task3.V14
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Операции сравнения                                                *");
             Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #3                                                              *");
+            Console.WriteLine("* Вариант #14                                                              *");
             Console.WriteLine("* Выполнила: Ходакова Надежда Антоновна | АСОиУб-23-2                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -40,7 +40,7 @@ namespace Tyuiu.HodakovaNA.Strint3.Task3.V14
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.ReplaceCharInString(value, replaceable, replacement));
+            Console.WriteLine("Итоговая строка = " + ds.ReplaceCharInString(value, replaceable, replacement));
 
             Console.ReadKey();
         }
